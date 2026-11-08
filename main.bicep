@@ -2,7 +2,7 @@
 // Transcribed from Joanne's photos, 2026-11-08.
 
 param location string = resourceGroup().location
-param storageAccountName string = 'resumestorage${uniqueString(resourceGroup().id)}'
+param storageAccountName string = 'fabricloggingstorage'
 
 resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
   name: storageAccountName
