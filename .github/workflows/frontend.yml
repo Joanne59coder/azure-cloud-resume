@@ -18,7 +18,7 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Upload Files to Static Web Container
-        uses: azure/CLI@v1
+        uses: azure/cli@v1
         with:
           azcliversion: latest
           inlineScript: |
